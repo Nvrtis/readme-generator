@@ -1,6 +1,7 @@
 const inquirer = require("inquirer")
 const fs = require("fs")
-const markdown = require("./generateMarkdown.js")
+const markdown = require("./generateMarkdown.js");
+const generateMarkdown = require("./generateMarkdown.js");
 
   // array of questions for user
 const questions = [
@@ -80,14 +81,17 @@ function writeToFile(fileName, data) {
     
       console.log("Success! Your README.md file has been generated")
   });
+}
 // function to initialize program
-async function init() {
-  await {
-    
-  }
+function init() {
+  inquirer.prompt(questions)
+  .then ((answers)=>fs.writeFile('text.md', generateMarkdown(answers),(err) => {
+    if (err) throw err;
+    console.log('The file has been saved!');
+  }))
+  .catch((err) => console.error(err));
 
 }
 
 // function call to initialize program
-init();
-
+init()
