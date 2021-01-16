@@ -1,9 +1,10 @@
 const inquirer = require("inquirer")
 const fs = require("fs")
-const template = require("./generateMarkdown.js")
+const markdown = require("./generateMarkdown.js")
 
-// array of questions for user
-inquirer.prompt([
+  // array of questions for user
+const questions = [
+  /* Pass your questions in here */
   {
     type: 'input',
     name: 'title',
@@ -15,7 +16,7 @@ inquirer.prompt([
   },  {
     type: 'input',
     name: 'intro',
-    message: 'Write a short introduction on what your project does ',
+    message: 'Write a short introduction on what your project does.',
   },   { 
     type: 'checkbox',
     name: 'content',
@@ -68,30 +69,25 @@ inquirer.prompt([
     name: 'email',
     message: 'What is the users email address?',
   },
-    /* Pass your questions in here */
-  ])
-  .then(answers => {
-    console.log(answers.content);
-    // Use user feedback for... whatever!!
-    // function to write README file
-    fs.writeFile('README.txt', generateMarkdown(answers),(err) => {
-      if (err) throw err;
-      console.log('The file has been saved!')
-    }) 
-  })
-  .catch(error => {
-    if(error.isTtyError) {
-      // Prompt couldn't be rendered in the current environment
-    } else {
-      // Something else when wrong
-    }
+  ];
+
+// function to write README file
+function writeToFile(fileName, data) {
+  fs.writeFile(fileName, data, err => {
+      if (err) {
+        return console.log(err);
+      }
+    
+      console.log("Success! Your README.md file has been generated")
   });
-
-
 // function to initialize program
-function init() {
+async function init() {
+  await {
+    
+  }
 
 }
 
 // function call to initialize program
 init();
+
