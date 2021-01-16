@@ -12,6 +12,10 @@ inquirer.prompt([
     type: 'input',
     name: 'link',
     message: 'What is the link to the project live page?',
+  },  {
+    type: 'input',
+    name: 'intro',
+    message: 'Write a short introduction on what your project does ',
   },   { 
     type: 'checkbox',
     name: 'content',
@@ -55,6 +59,14 @@ inquirer.prompt([
       return answers.content
     }
   }
+  },  {
+    type: 'input',
+    name: 'name',
+    message: 'what is your name/username?',
+  },  {
+    type: 'input',
+    name: 'email',
+    message: 'What is the users email address?',
   },
     /* Pass your questions in here */
   ])
