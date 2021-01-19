@@ -19,8 +19,6 @@
   [-Installation](#Installation)  
   [-Description](#Description)    
   [-Usage](#Usage)  
-  [-Contributors](#Contributors)  
-  [-Test](#Test)  
   [-Questions](#Questions)  
   
   
