@@ -44,7 +44,7 @@ function generateMarkdown(answers) {
   ${answers.content.includes('questions?') ? `## Questions?  ` : ""}
   ${answers.questions ? answers.questions : ""}
   ${answers.name? `<br/> My Github link is [${answers.name}](https://github.com/${answers.name})` : ""}
-  ${answers.email? `<br/> Any futherquestions can be sent to my email here  <${answers.email}>` : ""}
+  ${answers.email? `<br/> Any futher questions can be sent to my email here  <${answers.email}>` : ""}
 
     ${answers.licenses.includes('other') ? "## Licenses  " : ""}
     ${answers.otherLicenses ? answers.licenses : ""}
