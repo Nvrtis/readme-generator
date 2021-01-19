@@ -31,12 +31,13 @@
 
   ## Usage  
   The usage of this project will be to simplify how a user creates the readme file, by following a template and filling in after asking the user for relevent questions that is required in a readme file.
+
+
+[Link to youtube video ](https://youtu.be/PtUH3Cd5SRY)
+[Link to video ](https://drive.google.com/file/d/1D2vfnecwlhOR5YbztoCklNIBGjXpRQKg/view)
   
   ## Questions?  
   
   <br/> My Github link is [Nvrtis](https://github.com/Nvrtis)
   <br/> Any futher questions can be sent to my email here  <Nvav91@gmail.com>
 
-    
-    
-  

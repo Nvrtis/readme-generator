@@ -24,7 +24,7 @@ function generateMarkdown(answers) {
   ${answers.content.includes('contributors?') ? "[-Contributors](#Contributors)  " : ""}
   ${answers.content.includes('test?') ? "[-Test](#Test)  " : ""}
   ${answers.content.includes('questions?') ? "[-Questions](#Questions)  " : ""}
-  ${answers.licenses.includes('other') ? "[-Licenses](#Licenses)  " : ""}
+  ${answers.licenses.includes('Other') ? "[-Licenses](#Licenses)  " : ""}
   
   ${answers.content.includes('installation process?') ? "## Installation  " : ""}
   ${answers.installation ? answers.installation : ""}
@@ -46,8 +46,8 @@ function generateMarkdown(answers) {
   ${answers.name? `<br/> My Github link is [${answers.name}](https://github.com/${answers.name})` : ""}
   ${answers.email? `<br/> Any futher questions can be sent to my email here  <${answers.email}>` : ""}
 
-    ${answers.licenses.includes('other') ? "## Licenses  " : ""}
-    ${answers.otherLicenses ? answers.licenses : ""}
+  ${answers.licenses.includes('Other') ? "## Licenses  " : ""}
+ ${answers.otherLicenses ? answers.otherLicenses : ""}
   
   `;
 }
